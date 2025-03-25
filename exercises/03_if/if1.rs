@@ -2,12 +2,20 @@ fn bigger(a: i32, b: i32) -> i32 {
     // TODO: Complete this function to return the bigger number!
     // If both numbers are equal, any of them can be returned.
     // Do not use:
+    if a > b {
+        return a;
+    }
     // - another function call
     // - additional variables
+    b
+
 }
 
 fn main() {
     // You can optionally experiment here.
+    let num1: i32 = 141;
+    let num2: i32 = 352;
+    println!("biggest number = {}", bigger(num1, num2));
 }
 
 // Don't mind this for now :)
